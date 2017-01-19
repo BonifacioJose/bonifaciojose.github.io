@@ -1,119 +1,312 @@
 <!doctype html>
 <html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-	<style amp-custom>	html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, AMPs</title>
+        <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": [
+            "logo.jpg"
+            ]
+            }
+        </script>
+        <style amp-boilerplate>
+            body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <style amp-custom>
+            @font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}
 
-	.container{position:relative;width:100%;max-width:960px;margin:0 auto;padding:0 20px;box-sizing:border-box}.column,.columns{width:100%;float:left;box-sizing:border-box}@media(min-width:400px){.container{width:85%;padding:0}}@media(min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74.0%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78.0%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:"Raleway","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}h1{font-size:4.0rem;line-height:1.2;letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25;letter-spacing:-.1rem}h3{font-size:3.0rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media(min-width:550px){h1{font-size:5.0rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3.0rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type="submit"],input[type="reset"],input[type="button"]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,button:focus,input[type="submit"]:focus,input[type="reset"]:focus,input[type="button"]:focus{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary{color:#FFF;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:hover,button.button-primary:hover,input[type="submit"].button-primary:hover,input[type="reset"].button-primary:hover,input[type="button"].button-primary:hover,.button.button-primary:focus,button.button-primary:focus,input[type="submit"].button-primary:focus,input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus{color:#FFF;background-color:#1eaedb;border-color:#1eaedb}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type="checkbox"],input[type="radio"]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:normal}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ul ul,ul ol,ol ol,ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}th,td{padding:12px 15px;text-align:left;border-bottom:1px solid #e1e1e1}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}button,.button{margin-bottom:1rem}input,textarea,select,fieldset{margin-bottom:1.5rem}pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}
-	  
-	  amp-img.avatar {
-		border-radius: 500px;
-		border: 1px solid #d9d9d9;
-	  }
-	  .center {
-		text-align: center;
-	  }
-	  .shadow {
-    transition: all 0.25s ease;
-	      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-		}
-	  .shadow.hover:hover {
-	      box-shadow: 0 4px 4px 0 rgba(0,0,0,.24),0 6px 2px -4px rgba(0,0,0,.4),0 2px 10px 0 rgba(0,0,0,.24);
-		}
-		.background {
-			background-image: url('http://getskeleton.com/examples/landing/images/values-bg.jpg');
-		}
-		.front {
-			z-index:2000;
-		}
-		.name {
-			margin:6px;
-		}
-		.white {
-			color: white;
-		}
-		.text-shadow {		
-			text-shadow: 0px 3px 1px rgba(0,0,0,0.4),
-				 0px 4px 6px rgba(0,0,0,0.1),
-				 0px 8px 11px rgba(0,0,0,0.1);
-		}	
-		.text-shadow.hover:hover {	
-			transition: all 0.1s linear;	
-			text-shadow: 0px 4px 2px rgba(0,0,0,0.4),
-				 0px 8px 12px rgba(0,0,0,0.1),
-				 0px 16px 23px rgba(0,0,0,0.1);
-		}			 		 
-	</style>
-  </head>	
-  <body>
-<amp-img src="http://getskeleton.com/examples/landing/images/values-bg.jpg" alt="background" layout="responsive" height="50" width="1600">
-  <div class="container front">  
-    <div class="row">
-		<div class="center">
-	<amp-img src="" alt="José Bonifácio" class="avatar shadow hover" height="120" width="120"></amp-img>	
-			<h3 class="name white text-shadow hover">José Bonifácio</h1>
-		</div>
-	</div>
-  </div>
-</amp-img>
-  <div class="container">  
-    <div class="row">
-      <div class="twelve columns">
-        <h3>Who am I</h3>
-		https://avatars1.githubusercontent.com/u/7031658?v=3&s=460
-      </div>
-    </div><!--end of .row-->
-    <div class="row bottom">
-      <div class="two-thirds column">
-        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-        sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-        Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-      </div>
-      <div class="one-third column">
-        <h4>Degrees</h4>
-        <ul>
-          <li>BA in Information Systems</li>
-          <li>MSc in Applied Mathematics </li>
-          <li>Phd in Artificial Intelligence</li>
-        </ul>
-        <h4>Honors</h4>
-          <ul>
-            <li>1st place in the contest "MyContest"</li>
-            <li>Best Paper for 2014</li>
-          </ul>
-          <a href="#" class="btn">CV</a>
-      </div>
-    </div><!--end of .row-->
-    <div class="row">
-      <div class="twelve columns">
-        <h4 class="center">Interested in samples of my work?</h4>
-      </div>
-    </div><!--end of .row-->
-    <div class="row">
-      <div class="twelve columns">
-        <a href="#" class="btn block">Visit Codepen</a>
-      </div>
-    </div><!--end of .row-->
-  </div><!--end of .container-->
-  </body>
+            html{font-family:'Roboto', sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+            .container{position:relative;width:100%;max-width:960px;margin:0 auto;padding:0 20px;box-sizing:border-box}.column,.columns{width:100%;float:left;box-sizing:border-box}@media(min-width:400px){.container{width:85%;padding:0}}@media(min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74.0%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}.one-half.column{width:48%}.offset-by-one.column,.offset-by-one.columns{margin-left:8.66666666667%}.offset-by-two.column,.offset-by-two.columns{margin-left:17.3333333333%}.offset-by-three.column,.offset-by-three.columns{margin-left:26%}.offset-by-four.column,.offset-by-four.columns{margin-left:34.6666666667%}.offset-by-five.column,.offset-by-five.columns{margin-left:43.3333333333%}.offset-by-six.column,.offset-by-six.columns{margin-left:52%}.offset-by-seven.column,.offset-by-seven.columns{margin-left:60.6666666667%}.offset-by-eight.column,.offset-by-eight.columns{margin-left:69.3333333333%}.offset-by-nine.column,.offset-by-nine.columns{margin-left:78.0%}.offset-by-ten.column,.offset-by-ten.columns{margin-left:86.6666666667%}.offset-by-eleven.column,.offset-by-eleven.columns{margin-left:95.3333333333%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}.offset-by-two-thirds.column,.offset-by-two-thirds.columns{margin-left:69.3333333333%}.offset-by-one-half.column,.offset-by-one-half.columns{margin-left:52%}}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:'Roboto', sans-serif;color:#222}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:1rem;font-weight:300}h1{font-size:4.0rem;line-height:1.2;letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25;letter-spacing:-.1rem}h3{font-size:3.0rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}h6{font-size:1.5rem;line-height:1.6;letter-spacing:0}@media(min-width:550px){h1{font-size:5.0rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3.0rem}h5{font-size:2.4rem}h6{font-size:1.5rem}}p{margin-top:0}a{color:#1eaedb}a:hover{color:#0fa0ce}.button,button,input[type="submit"],input[type="reset"],input[type="button"]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}.button:hover,button:hover,input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover,.button:focus,button:focus,input[type="submit"]:focus,input[type="reset"]:focus,input[type="button"]:focus{color:#333;border-color:#888;outline:0}.button.button-primary,button.button-primary,input[type="submit"].button-primary,input[type="reset"].button-primary,input[type="button"].button-primary{color:#FFF;background-color:#33c3f0;border-color:#33c3f0}.button.button-primary:hover,button.button-primary:hover,input[type="submit"].button-primary:hover,input[type="reset"].button-primary:hover,input[type="button"].button-primary:hover,.button.button-primary:focus,button.button-primary:focus,input[type="submit"].button-primary:focus,input[type="reset"].button-primary:focus,input[type="button"].button-primary:focus{color:#FFF;background-color:#1eaedb;border-color:#1eaedb}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea,select{height:38px;padding:6px 10px;background-color:#fff;border:1px solid #d1d1d1;border-radius:4px;box-shadow:none;box-sizing:border-box}input[type="email"],input[type="number"],input[type="search"],input[type="text"],input[type="tel"],input[type="url"],input[type="password"],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{min-height:65px;padding-top:6px;padding-bottom:6px}input[type="email"]:focus,input[type="number"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="tel"]:focus,input[type="url"]:focus,input[type="password"]:focus,textarea:focus,select:focus{border:1px solid #33c3f0;outline:0}label,legend{display:block;margin-bottom:.5rem;font-weight:600}fieldset{padding:0;border-width:0}input[type="checkbox"],input[type="radio"]{display:inline}label>.label-body{display:inline-block;margin-left:.5rem;font-weight:normal}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ul ul,ul ol,ol ol,ol ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}li{margin-bottom:1rem}code{padding:.2rem .5rem;margin:0 .2rem;font-size:90%;white-space:nowrap;background:#f1f1f1;border:1px solid #e1e1e1;border-radius:4px}pre>code{display:block;padding:1rem 1.5rem;white-space:pre}th,td{padding:12px 15px;text-align:left;border-bottom:1px solid #e1e1e1}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}button,.button{margin-bottom:1rem}input,textarea,select,fieldset{margin-bottom:1.5rem}pre,blockquote,dl,figure,table,p,ul,ol,form{margin-bottom:2.5rem}.u-full-width{width:100%;box-sizing:border-box}.u-max-full-width{max-width:100%;box-sizing:border-box}.u-pull-right{float:right}.u-pull-left{float:left}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #e1e1e1}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}
+
+            html {
+                background-color: #EEEEEE;
+            }
+            amp-img.avatar {
+                border-radius: 500px;
+                border: 1px solid #d9d9d9;
+            }
+            .center {
+                text-align: center;
+            }
+            .shadow {
+                transition: all 0.25s ease;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+            }
+            .shadow.hover:hover {
+                box-shadow: 0 4px 4px 0 rgba(0,0,0,.24),0 6px 2px -4px rgba(0,0,0,.4),0 2px 10px 0 rgba(0,0,0,.24);
+            }
+            .background {
+                background-image: url('http://getskeleton.com/examples/landing/images/values-bg.jpg');
+            }
+            .front {
+                z-index:2000;
+            }
+            .name {
+                line-height: 1;
+            }
+            .white {
+                color: white;
+            }
+            .text-shadow {		
+                text-shadow: 0px 3px 1px rgba(0,0,0,0.4),
+                    0px 4px 6px rgba(0,0,0,0.1),
+                    0px 8px 11px rgba(0,0,0,0.1);
+            }	
+            .text-shadow.hover:hover {	
+                transition: all 0.1s linear;	
+                text-shadow: 0px 4px 2px rgba(0,0,0,0.4),
+                    0px 8px 12px rgba(0,0,0,0.1),
+                    0px 16px 23px rgba(0,0,0,0.1);
+            }	
+            .header {
+                height: 200px;
+                width: 100%;
+                padding: 10px;
+                background-color: #00897B;
+            }
+            .media-icon {
+                height: 24px;
+                width: 24px;
+                background-position: center center;
+                display: inline-block;
+                background-size: 28px 28px;
+                margin-right: 6px;
+                margin-left: 6px;
+            }
+            .facebook-icon {
+                background-image: url('facebook-box.png');
+            }
+            .linkedin-icon {
+                background-image: url('linkedin-box.png');
+            }
+            .github-icon {
+                background-image: url('github-box.png');
+            }
+            .stackoverflow-icon {
+                background-image: url('stackoverflow.png');
+            }
+            .material-card {
+                margin-top: 10px;  
+                margin-bottom: 10px;   
+                padding: 10px;
+                padding-left: 16px;
+                padding-right: 16px;
+                background-color: #fff;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+            }
+            .technology-chip {
+                padding: 6px;
+                line-height: 1;
+                font-size: 13px;
+                margin: 2px;
+                margin-bottom: 6px;
+                color: #39739d;
+                background-color: #E1ECF4;
+                display: inline-block;
+                text-align: center;
+            }
+            .technology-chip:hover {
+                background-color: #d2dae0;
+            }
+            .content {
+                margin-top: 10px;
+            }
+            .name {
+                font-size: 30px;
+            }
+            .social-medias {
+                margin-top: 10px;
+            }
+            .contact {
+                font-size: 20px;
+            }
+            .bio {
+                text-align: justify;
+            }
+            .degree {
+                line-height: 1.5;
+            }    
+            .degree .title {
+                font-weight: bold;
+            }
+            .degree .duration {
+                color: #9E9E9E;
+                font-size: 12px;
+            }
+            .job {
+                line-height: 1.5;
+            }
+            .job .title {
+                font-weight: bold;
+            }
+            .job .employer a {
+                text-decoration: none;
+                color: #6ba4ce;
+                line-height: 2;
+                font-weight: bold;
+            }
+            .job .description {
+                text-align: justify;
+                line-height: 1.4;
+                font-size: 14px;
+            }
+            .project {
+                line-height: 1.5;
+            }
+            .project .title a {
+                text-decoration: none;
+                color: #6ba4ce;
+                font-weight: bold;
+            }
+            .project .description {
+                font-size: 12px;
+            }
+        </style>
+    </head>	
+    <body>
+        <div class="header">
+            <div class="container front">  
+                <div class="row">
+                    <div class="center">
+                        <amp-img src="https://avatars1.githubusercontent.com/u/7031658?v=3&s=460" alt="José Bonifácio" class="avatar shadow hover" height="100" width="100"></amp-img>	
+                        <div class="name white text-shadow">José Bonifácio</div>
+                        <div class="white text-shadow">Software developer</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center social-medias">
+                        <a target="blank" href="https://www.facebook.com/jose.bonifacio.5" class="media-icon facebook-icon hover"></a>
+                        <a target="blank" href="https://www.linkedin.com/in/jos%C3%A9-bonif%C3%A1cio-7a254194" class="media-icon linkedin-icon hover"></a>
+                        <a target="blank" href="https://github.com/BonifacioJose" class="media-icon github-icon hover"></a>
+                        <a target="blank" href="http://stackoverflow.com/users/3396363/bonifacio" class="media-icon stackoverflow-icon hover"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container content">  
+            <div class="row">
+                <div class="row bottom">
+                    <div class="two-thirds column">
+                        <div class="material-card">                            
+                            <h5>Techologies stack</h5>
+                            <div class="technology-chip">java</div>
+                            <div class="technology-chip">hibernate</div>
+                            <div class="technology-chip">jsf</div>
+                            <div class="technology-chip">primefaces</div>
+                            <div class="technology-chip">javascript</div>
+                            <div class="technology-chip">jquery</div>
+                            <div class="technology-chip">angular2</div>
+                            <div class="technology-chip">html</div>
+                            <div class="technology-chip">css</div>
+                            <div class="technology-chip">material-design</div>
+                            <div class="technology-chip">sql</div>
+                            <div class="technology-chip">postgresql</div>
+                            <div class="technology-chip">mysql</div>
+                            <div class="technology-chip">sybase</div>
+                            <div class="technology-chip">scrum</div>
+                            <div class="technology-chip">linux</div>
+                            <div class="technology-chip">windows</div>
+                        </div>
+                        <div class="material-card">
+                            <h5>Professional experiences</h5>
+                            <div class="job">
+                                <div class="title">
+                                    Web Developer (April/2016 - current)
+                                </div>
+                                <div class="employer">
+                                    <a target="blank" href="http://twsistemas.com.br">@TW Sistemas</a>
+                                </div>
+                                <div class="description">
+                                    <span>Currently I am working on a business inteligence software. My functions are build new features, fix bugs, improve the infrastructure and keep our services and integrations running</span>
+                                </div>
+                            </div>
+                            <br/>                            
+                            <div class="job">
+                                <div class="title">
+                                    Java Developer (November/2013 - April/2016  )
+                                </div>
+                                <div class="employer">
+                                    <a target="blank" href="http://www.dominiosistemas.com.br">@Domínio Sistemas (Thomson Reuters)</a>
+                                </div>
+                                <div class="description">
+                                    <span>Built, maintained and improved a new product from scratch using Java (JSF, Hibernate) for the real state market.</span>
+                                </div>
+                            </div>
+                            <br/>                            
+                            <div class="job">
+                                <div class="title">
+                                    Customer technical support (June/2012 - November/2013  )
+                                </div>
+                                <div class="employer">
+                                    <a target="blank" href="http://www.dominiosistemas.com.br">@Domínio Sistemas (Thomson Reuters)</a>
+                                </div>
+                                <div class="description">
+                                    <span>Worked as help desk support for the software customers and helped to introduce new proccesses for a better support quality.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-third column">
+                        <div class="material-card">
+                            <h5>Degrees</h5>
+                            <div class="degree">
+                                <div class="duration">2012-2015 (4 years)</div>
+                                <div class="title">Bachelor in Information System</div>
+                            </div>
+                            <br/>
+                            <div class="degree">
+                                <div class="duration">2008-2011 (4 years)</div>
+                                <div class="title">Technical in Informatics</div>
+                            </div>
+                        </div>
+                        <div class="material-card">
+                            <h5>Projects</h5>
+                            <div class="project">
+                                <div class="title">
+                                    <a target="blank" href="https://bitbucket.org/bonifaciojsj/mugi">Mugi</a>
+                                </div>
+                                <div class="description">Mugi is a responsive personal finances management software built with Java(JSF).</div>
+                            </div>
+                            <br/>
+                            <div class="project">
+                                <div class="title">
+                                    <a target="blank" href="https://bitbucket.org/bonifaciojsj/portaldoensino">Portal do Ensino</a>
+                                </div>
+                                <div class="description">Portal do Ensino is a educational social network software built using Java (JSF).</div>
+                            </div>
+                            <br/>                            
+                            <div class="project">
+                                <div class="title">
+                                    <a target="blank" href="https://github.com/BonifacioJose/WildFlyQuickstart">WildFly Quickstart</a>
+                                </div>
+                                <div class="description">WildFly Quickstart Boilerplate project for a quickstart in WildFly.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twelve columns">                        
+                        <div class="material-card">
+                            <h5>About me</h5>
+                            <div class="bio">
+                                <span>I am José Bonifácio, a software developer from Criciúma, Brazil. I started my IT career around 5 years ago as a customer techical support. After one year and some months I started working as a software developer and so I am until now rocking some code.</span>
+                            </div>
+                            <br/>
+                            <div class="contact">
+                                <span>Contact</span>
+                            </div>
+                            <div>
+                                <span>bonifacio.jsj@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
 </html>
